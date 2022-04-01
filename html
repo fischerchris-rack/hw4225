@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<meta charset="utf-8"/>
+
+  
+	<!--Fontawesome-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="https://unpkg.com/purecss@2.1.0/build/pure-min.css" integrity="sha384-yHIFVG6ClnONEA5yB5DJXfW2/KC173DIQrYoZMEtBvGzmf0PKiGyNEqe9N6BNDBH" crossorigin="anonymous">
+	
+	
+	<title>Crypto form</title>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.js"></script> 
+	
+	<script src="C:\Users\cfischer\OneDrive - Genesys Telecommunications Laboratories, Inc\Documents\Personal\hw4\hw4js.js"></script>
+
+
+
+  </head>
+  <body>
+  
+ <h1> --Conversion Form-- </h1>
+ <h3> -Enter text to encrypt the message- </h3>
+
+<form name="pure-form">
+
+ <fieldset>
+        <div class="pure-control-group">
+		
+ <table class="pure-table">
+
+ <thead>
+  <tr>
+    <td>Original String:</td>
+   <td><input size="80" type="text" id="string" name="cyphertext"/></td>
+   <td><input type="button" value="convert to hash" onclick="encrypted();"/></td>
+
+  </tr>
+  </thead>
+  
+  <tbody>
+	<tr>
+		<td>MD5 Ecrypted: </td>
+		<td><p id="MD5hash"></p></td>
+		</tr>
+		
+	<tr>
+		<td>SHA1 Encrypted: </td>
+		<td><p id= "SHA1hash"></p></td>
+		</tr>
+			
+	<tr>	
+		<td>AES Encrypted: </td>
+		<td><p id= "AEShash"></p></td>
+		</tr>
+		
+	<tr>
+		<td>SHA256 Encrypted: </td>
+		<td><p id= "SHA2hash"></p></td>
+		</tr>
+</tbody>
+
+ </table>
+
+<br>
+<br>
+
+	<h3>  Number Conversion</h3>
+	
+<table class="pure-table">
+
+ <thead>
+  <tr>
+	<td>Conversion for Binary and Decimal</td>
+	<td></td>
+		<td></td>
+	<td>Conversion</td>
+	</tr>
+</thead>
+	
+<tbody>
+	<tr>
+  <td>Enter binary number : </td>
+  <td><input type="text" id="conv"></td>
+  <td><input type="button" value= "Convert to decimal" onclick="BinToDec();"/></td> 
+  	<td><p id= "decA"></p></td>
+  </tr>
+	
+	<tr>
+  <td>Enter Decimal number : </td>
+  <td><input type="text" id="decimal"></td>
+  <td><input type="button" value= "Convert to Binary" onclick="decToBin();"/></td> 
+	<td><p id= "decB"></p></td>
+  </tr>
+	
+ </tbody>
+ </table>
+ 
+<br>
+<input type="reset" value='Clear text'>
+
+ </div>
+    </fieldset>
+</form>
+
+
+</body>
+
+  </html>
